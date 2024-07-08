@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website shintya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="animation-fade-in">KEPOIN SHINTYA!</h2>
+    <header>
+        <div>
+            <img src="logoshintya.png" alt="Logo Shintya" class="avatar">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Selamat Datang di Website pribadi saya!!</h1>
+            <p>Temukan inspirasi,cerita dan karya terbaru saya di kehidupan ini.</p>
+            <button id="learn-more-button">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <div class="about-details">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hallo! nama saya Shintya Bayu Apta Andika. Saya lahir pada tanggal 23 Maret 2007, saat ini saya berusia 17 tahun. Saya sekarang sedang menjadi siswa di SMK Telekomunikasi Tunas Harapan Kab.Semarang,disana saya mengambil jurusan PPLG. Kenapa saya bisa sekolah disana karna pada saat itu saya ingin sekali sekolah di SMKN 8 Surakarta (SMKI). Saya disana ingin mengambil jurusan Seni Tari.Namun dikarenakan jarak yang lumayan jauh jadi dicarikan sekolah yang di daerah Salatiga. Walaupun saya tidak bisa menempuh pendidikan SMK di bidang Seni Tari saya tidak punya rasa putus asa untuk selalu belajar Tari dan pada akhirnya saya tetap belajar tari dan mengikuti Sekolah Tari di Sanggar Tari Hasthasawanda Salatiga.</p>
+                    <p>Karena saya meempunyai cita-cita ingin menjadi guru seni budaya dan ingin melestarikan tradisi dan kebudayaan lokal.</p>
+                </div>
+                <div class="about-image">
+                    <img src="fotoshintya.jpg" alt="Foto Shintya">
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="content">
+            <h1>Portofolio</h1>
+            <div class="portfolio-item">
+                <h4>Keterampilan</h4>
+                <p>Membuat Website, membuat CRUD, membuat Database.</p>
+                <p>Menari Tradisional, dan aktif mengikuti Paguyuban Seni.</p>
+            </div>
+            <div class="portfolio-item">
+                <h4>Pengalaman di Sekolah</h4>
+                <p>Saya disekolah di ajarakan membuat database, website, dan Crud. diajarkan bahasa pemrograman seperti HTML, CSS, PHP, Dan C#.
+                    Saya disekolah juga sudah mempraktekan materi itu satu persatu</p>
+                <img src="fotbarshintya.jpg" alt="school">
+            </div>
+            <div class="portfolio-item">
+                <h4>Pengalaman di Luar Sekolah</h4>
+                <p>Saya dari SD sudah mengikuti Paguyuban seni disana saya menjadi salah satu anggota penari sampai saat ini pun saya masih sering mengikuti paguyuban itu dari yang di daerah sendiri sekarang sudah mulai aktif mengikuti di banyak paguyuban. Mulai SMK saya mencari cari sanggar tari dan pada akhirnya saya mendaftar salah satu Sanggar Tari di salatiga dan sampai saat ini saya aktif di keduanya aktif di paguyuban dan aktif di Sanggar Tari</p>
+                <img src="tarishintya.jpg" alt="tari">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Bila ada bantuan bisa hubungi saya.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Send">
+      </form>
+  
+  <!-- Add a script tag to handle the form submission -->
+  <script>
+    const form = document.getElementById('contact-form');
+    const sendButton = document.getElementById('send-button');
+  
+    sendButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = 'Contact Form Submission';
+      const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+  
+      const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+    });
+  </script>
+        </form>
+    </section>
+    <section id="gallery">
+        <div class="content">
+            <h1>Gallery Shintya</h1>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img src=nyany.jpeg" alt="Image 1">
+		</div>
+		<div class="gallery-item">
+			<img src="image2.jpg" alt="Image 2">
+		</div>
+		<div class="gallery-item">
+			<img src="image3.jpg" alt="Image 3">
+		</div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 shintya tata</p>
+                <a href="https://wa.me/qr/OM6O35OBMRY7F1">WhatsApp</a>
+                <a href="mailto:shintyaapta@gmail.com">Email</a>
+                <a href="https://www.instagram.com/shnt_yyy?igsh=MWFlNmg0bDVoMHYwaA%3D%3D&utm_source=qr">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        const learnMoreButton = document.getElementById('learn-more-button');
+  
+        learnMoreButton.addEventListener('click', () => {
+          window.location.href = '#about'; // Scroll to the About section
+        });
+      </script>
+</body>
+</html>

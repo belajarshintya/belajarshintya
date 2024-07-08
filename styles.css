@@ -1,0 +1,305 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding-bottom: 100px; /* Menambahkan padding-bottom agar konten tidak tertutupi oleh footer */
+    display: flex; /* Menjadikan tata letak sejajar */
+    flex-direction: column; /* Susunan flex diubah menjadi kolom */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header {
+    background-color: #523131e9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Efek shadow untuk efek 3D */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Menu styles */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Menjadikan menu sejajar */
+    justify-content: center; /* Mengatur agar menu berada di tengah */
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Home section styles */
+#home {
+    background-color: #e387b2c4; /* Warna latar belakang untuk Home */
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    position: relative; /* Diperlukan untuk efek 3D */
+}
+
+#home .home-content {
+    transform-style: preserve-3d; /* Memastikan bahwa transformasi 3D bekerja dengan baik */
+    perspective: 1000px; /* Perspektif untuk efek 3D */
+}
+
+#home .home-content .home-inner {
+    transform: rotateY(10deg); /* Efek rotasi 3D */
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* About section styles */
+#about {
+    background-color: #fff; /* Warna latar belakang untuk About */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Susunan flex diubah menjadi kolom */
+}
+
+.about-text {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+    max-width: 600px; /* Maksimum lebar teks */
+}
+
+.about-text h2 {
+    color: #0d0b0c;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-text h2::before {
+    content: '\2022';
+    color: #ec9ac3;
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.about-text p {
+    color: #0a0606;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.about-image img {
+    max-width: 50%;
+    border-radius: 3px;
+}
+
+/* Portfolio section styles */
+#portfolio {
+    background-color: #e9dcd6;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    max-width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Efek shadow untuk efek 3D */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); /* Efek scaling saat hover */
+}
+
+.portfolio-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Contact Page Styles */
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+#contact h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin-bottom: 10px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#contact input[type="submit"] {
+    background-color: #8f4545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #e33868;
+}
+
+/* Footer styles */
+footer {
+    background-color: #813729;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* styles.css */
+
+#learn-more-button {
+    background-color: #cf2d91;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #learn-more-button:hover {
+    background-color: #ffffff;
+  }
+  h2{
+    font-size: 36px;
+    margin: 15px;
+  }
+  
+  .animation-fade-in {
+    animation: fade-in 2s forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
